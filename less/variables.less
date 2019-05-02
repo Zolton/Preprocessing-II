@@ -45,22 +45,30 @@
     }
   }
 
+  .top-fold {
+    .flex-column();
+  }
+
   .row1 {
-      .flex-column();
+    .flex-column();
   }
 
   .row2 {
     .flex-column();
     .adventure {
-        order: -1;
+      order: -1;
     }
   }
 
   .content-pick {
     .flex-column();
   }
-  .destionation {
+  .destination {
+    max-width: 500px;
     width: 80%;
+
+    .btn {
+      .button-format(lightblue, white, 2rem, 10px);
+    }
   }
-  
 }
