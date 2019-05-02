@@ -16,8 +16,9 @@
 }
 
 nav {
-  .flex-row (space-around);
+  .flex-row(space-between);
   .format-width ();
+  margin: 30px auto;
 
   a {
     text-decoration: none;
@@ -25,15 +26,14 @@ nav {
   }
 
   .left-side {
-    justify-content: flex-start;
     font-family: "Indie Flower";
     font-size: 4rem;
+  }
 }
-  }
 
-  .right-side {
-    width: 40%;
-    font-size: 1.6rem;
-    font-family: "Roboto";
-  }
-
+.right-side {
+  .flex-row(space-around);
+  width: 40%;
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
