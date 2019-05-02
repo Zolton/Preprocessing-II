@@ -15,6 +15,11 @@
   margin: 0 auto;
 }
 
+@desktop: ~"(min-width: 501px)";
+
+
+@media screen and @desktop {
+
 nav {
   .flex-row(space-between);
   .format-width ();
@@ -29,11 +34,12 @@ nav {
     font-family: "Indie Flower";
     font-size: 4rem;
   }
-}
 
-.right-side {
-  .flex-row(space-around);
-  width: 40%;
-  font-size: 1.6rem;
-  font-family: "Roboto";
+  .right-side {
+    .flex-row(space-around);
+    width: 40%;
+    font-size: 1.6rem;
+    font-family: "Roboto";
+  }
+}
 }
