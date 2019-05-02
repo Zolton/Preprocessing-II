@@ -24,23 +24,27 @@
     font-size: 1.6rem;
     font-family: "Roboto";
   }
-  div {
-    background-color: red;
+  .row1 {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
-    width: 100%;
   }
-  img {
-    background-color: red;
+  .row2 {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
-    width: 100%;
+  }
+  .row2 .adventure {
+    order: -1;
+  }
+  .content-pick {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
   }
 }
 .btn {
