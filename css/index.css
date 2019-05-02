@@ -24,6 +24,14 @@
     font-size: 1.6rem;
     font-family: "Roboto";
   }
+  nav .logo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .tops {
+    width: 60%;
+  }
   .top-fold {
     display: flex;
     flex-flow: column wrap;
