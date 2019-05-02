@@ -168,6 +168,34 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.format-width {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav .left-side {
+  justify-content: flex-start;
+  font-family: "Indie Flower";
+  font-size: 4rem;
+}
+.right-side {
+  width: 40%;
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
