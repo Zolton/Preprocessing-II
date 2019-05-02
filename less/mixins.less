@@ -1,8 +1,13 @@
 // Mixins in here
 
-.button-format (@x, @y) {
+.button-format (@w, @x, @y, @z) {
     width: 100%;
-    background-color: green;
-    color: white;
+    background-color: @w;
+    color: @x;
+    font-size: @y;
+    border-radius: @z;
+}
 
+.btn {
+    .button-format(darkgreen, white, 2rem, 10px);
 }
