@@ -1,14 +1,84 @@
-
-// Color assignments 
+// Color assignments
 @font-color: @shark;
 @button-bg: @eastern-blue;
-@main-bg:  @white;
+@main-bg: @white;
 @navigation-border: @silver;
 @footer-bg: @sandy-beach;
 
 // Colors
-@white: #FFFFFF;
-@silver: #C0C0C0;
+@white: #ffffff;
+@silver: #c0c0c0;
 @shark: #212529;
-@eastern-blue: #17A2B8;
-@sandy-beach: #FFEBCD;
+@eastern-blue: #17a2b8;
+@sandy-beach: #ffebcd;
+
+@mobile: ~"(max-width: 500px)";
+
+.flex-column() {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and @mobile {
+  nav {
+    .flex-column();
+    width: 100%;
+    margin: 30px auto;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .left-side {
+      font-family: "Indie Flower";
+      font-size: 4rem;
+      align-items: center;
+    }
+
+    .right-side {
+      .flex-row(space-around);
+      font-size: 1.6rem;
+      font-family: "Roboto";
+    }
+
+    .logo {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+  }
+
+.tops {
+    width: 60%;
+}
+
+  .top-fold {
+    .flex-column();
+  }
+
+  .row1 {
+    .flex-column();
+  }
+
+  .row2 {
+    .flex-column();
+    .adventure {
+      order: -1;
+    }
+  }
+
+  .content-pick {
+    .flex-column();
+  }
+  .destination {
+    max-width: 500px;
+    width: 80%;
+
+    .btn {
+      .button-format(lightblue, white, 2rem, 10px);
+    }
+  }
+}
